@@ -30,10 +30,10 @@ def maxx(box):
         return box
 
 def convert_box(box, img_width, img_height, cls):
-    x0 = int((box[0] - ((box[2]) / 2)*0.9) * img_width)
-    y0 = int((box[1] - ((box[3]) / 2)*0.9) * img_height)
-    x1 = int((box[0] + ((box[2]) / 2)*0.9) * img_width)
-    y1 = int((box[1] + ((box[3]) / 2)*0.9) * img_height)
+    x0 = int((box[0] - ((box[2]) / 2)*1.1) * img_width)
+    y0 = int((box[1] - ((box[3]) / 2)*1.1) * img_height)
+    x1 = int((box[0] + ((box[2]) / 2)*1.1) * img_width)
+    y1 = int((box[1] + ((box[3]) / 2)*1.1) * img_height)
     if x0<0:
         x0 = 0
     if y0<0:
